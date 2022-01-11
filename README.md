@@ -1,9 +1,11 @@
 # caruseljs
 
 
-# Demo
+## Demo
 
-[example site]: https://caruseljs-2c162.web.app/
+ [caruseljs-2c162.web.app](https://caruseljs-2c162.web.app/)
+
+
 
 ## Building and running on localhost
 
