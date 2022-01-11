@@ -1,0 +1,150 @@
+.see{
+    display: flex
+}
+
+
+h1 {
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header{
+  background: #f1f1f1;
+  padding: 5px;
+  margin-bottom: 200px;
+}
+
+
+.caruseljs{
+    position: relative;
+    min-height: 180px;
+}
+
+.caruseljs-items {
+    display: flex;
+    position: relative;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* animation-name: items-transition;
+    animation-duration: 1s; */
+}
+
+.caruseljs-arrow{
+    opacity: 0;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgb(124, 124, 124);
+    top: calc(50% - 16px);
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 1.3em;
+    background: rgba(235, 235, 235, 0.6);
+    border: solid 1px #e6e6e6;
+    border-radius: 100%;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+    cursor: pointer;
+    transition: all 0.2s;
+    z-index: 999;
+}
+
+.caruseljs-arrow-left:hover, .caruseljs-arrow-right:hover {
+    background: rgba(253, 253, 253, 0.9);
+}
+
+
+.caruseljs-arrow-left{
+    left: 2px;
+}
+.caruseljs-arrow-right{
+    right: 2px;
+}
+
+.caruseljs-item{
+    width: 180px;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 5px; */
+    position: absolute;
+    transition: all 0.4s;
+    z-index: 998;
+   
+}
+
+.caruseljs-item__content{
+    transition: all 0.4s;
+}
+
+.caruseljs-item__content img{
+    border-radius: 5px;
+}
+
+.demo-1 {
+    padding: 20px;
+    background: #eff0f0;
+    border-radius: 10px;
+}
+
+.slideDown{
+    animation-name: slideDown;
+    animation-duration: 1.2s; 
+    animation-timing-function: ease;    
+    visibility: visible !important;                     
+}
+
+
+.slideUp{
+    animation-name: slideUp;
+    animation-duration: 0.9s; 
+    animation-timing-function: ease;    
+    visibility: visible !important;         
+}
+ 
+@keyframes slideUp {
+    0% {
+        transform: translateY(0%);
+        opacity: 0.9;
+    }         
+    100% {
+        transform: translateY(150%);
+        opacity: 0;
+    }   
+}
+
+
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0.2;
+    }
+    50%{
+        transform: translateY(8%);
+    }
+    65%{
+        transform: translateY(-4%);
+    }
+    80%{
+        transform: translateY(4%);
+    }
+    95%{
+        transform: translateY(-2%);
+    }           
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }       
+}
+
+
+
+
