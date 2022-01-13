@@ -20,6 +20,8 @@ const caruseljs = (carusel, data = [], options = {}) => {
   let newItemIdx = 0
   let isMobile = false
 
+  
+
   const $arrows = carusel.querySelectorAll(".caruseljs-arrow")
 
   const onMouseEnter = () => {
